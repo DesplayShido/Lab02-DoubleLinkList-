@@ -1,0 +1,66 @@
+
+(code make by Desplay, pls don't copy and paste, let copy and edit again !)
+
+-----BÀI TẬP DANH SÁCH LIÊN KẾT KÉP-----
+
+1. Cài đặt các thao tác trên danh sách liên kết kép (đôi)
+	a. Khai báo một cấu trúc danh sách liên kết đôi
+	b. Hàm khởi tạo danh sách liên kết đôi
+	c. Hàm kiểm tra rỗng trong danh sách liên kết đôi
+	d. Hàm tạo Node trong danh sách liên kết đôi
+	e. Thêm phần tử vào đầu danh sách liên kết đôi
+	f. Thêm phần tử vào cuối danh sách liên kết đôi
+	g. Thêm phần tử vào giữa danh sách liên kết đôi
+	h. Nhập N phần tử vào danh sách liên kết đôi
+	i. Xuất dữ liệu của các node có trong danh sách liên kết đôi
+	j. Hàm tìm kiếm một phần tử trong danh sách liên kết đôi
+	k. Xóa phần tử đầu danh sách liên kết đôi
+	l. Xóa phần tử cuối danh sách liên kết đôi
+	m. Xóa phần tử có khóa K trong danh sách liên kết đôi
+
+---(code in file 20521212_Nguyễn Tuấn Dũng_BTTH3_Câu 01.cpp)---
+
+2. Viết chương trình cài đặt danh sách liên kết đôi và thực hiện yêu cầu đề bài
+	a. Định nghĩa một cấu trúc Học viên bao gồm các trường thông tin
+	   như sau: Mã học viên (kiểu số nguyên), tên học viên (kiểu chuỗi ký
+	   tự), lớp (kiểu chuỗi ký tự), chuyên ngành (Khoa học máy tính, Công
+	   nghệ Thông tin, Thương mại điện tử, Quản trị an ninh mạng), điểm
+	   tổng kết (kiểu số thực).
+	b. Cài đặt một cấu trúc danh sách liên kết đôi cho kiểu dữ liệu Học
+	   viên, với các thao tác: 1) Khởi tạo danh sách; 2) Tạo mới một nút
+	   chứa dữ liệu; 3) Chèn nút vào đầu danh sách; 4) Duyệt danh sách.
+	c. Chương trình chính: Sử dụng cấu trúc danh sách liên kết đơn và
+	   các thao tác đã tạo để:
+	   – Nhập vào danh sách gồm n Học viên (n bất kỳ).
+	   – Hiển thị danh sách đã nhập ra màn hình.
+	   – Liệt kê ra màn hình danh sách tất cả những Học viên thuộc chuyên ngành
+	     “Công nghệ Thông tin” và có điểm tổng kết ≥ 8.0
+	   – Nhập vào mã học viên và xóa học viên đó khỏi danh sách
+	   – Hiển thị lại danh sách sau khi xóa học viên
+
+---(code in file 20521212_Nguyễn Tuấn Dũng_BTTH3_Câu 02.cpp)---
+
+3. Viết chương trình quản lý nhân sự cho một công ty, mỗi nhân viên trong
+   công ty gồm các thông tin sau: mã số (không có hai người trùng mã số), họ,
+   tên, ngày sinh, nơi sinh, địa chỉ, ngày công tác, lương. Viết chương trình
+   quản lý nhân viên với các thao tác sau:
+	- Thêm vào một nhân viên.
+	- Xem danh sách nhân viên.
+	- Tìm nhân viên theo mã số.
+	- Tìm một nhân viên theo tên.
+	- In ra bảng lương của các nhân viên trong công ty theo thứ tự giảm dần.
+	- Xóa một nhân viên.
+
+---(code in file 20521212_Nguyễn Tuấn Dũng_BTTH3_Câu 03.cpp)---
+
+4. Giả sử cho một danh sách liên kết kép lưu các số nguyên. Hãy thực hiện các yêu
+   cầu sau:
+	a. Viết hàm tạo ra một danh sách 50.000 số nguyên ngẫu nhiên.
+	b. Viết hàm tính giá trị trung bình của các số nguyên trong câu a.
+	c. Viết hàm kiểm tra xem danh sách các số nguyên trong câu a có thứ tự
+	   không? (tăng dần hoặc giảm dần)
+
+---(code in file 20521212_Nguyễn Tuấn Dũng_BTTH3_Câu 04.cpp)---
+
+
+
