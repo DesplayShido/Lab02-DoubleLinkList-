@@ -285,27 +285,29 @@ int main() {
     system("cls");
 
     //Nhap danh sach hoc vien 
+    cout << "======== NHAP DANH SACH SINH VIEN ========" << endl;
     InsertList(list, n);
-    
+    system("cls");
 
     // Xuat danh sach hoc vien da nhap
-    cout << "Danh sach hoc vien da nhap: " << endl;
+    cout << "======== DANH SACH HOC VIEN ========" << endl;
     PrintList(list);
-    DownLine();
+    system("pause");
+    system("cls");
 
     // Liet ke danh sach hoc vien chuyen nganh "cong nghe thong tin" va diem tong ket >= 8
-    cout << "Danh sach hoc vien chuyen nganh 'cong nghe thong tin' va diem tong ket >= 8: " << endl;
-    PrintListWithCondition(list, 2, double(8));
-    DownLine();
+    cout << "======== DANH SACH HOC VIEN CHUYEN NGANH \"\CONG NGHE THONG TIN\"\ VA DIEM TONG KET >= 8 ========" << endl;
+    PrintListWithCondition(list, 2, 8);
+    system("pause");
+    system("cls");
 
     // Nhap ma hoc vien va xoa hoc vien do
     cout << "Nhap ma hoc vien can xoa: ";
     cin >> x;
-    cout << "------------------------------------------" << endl;
+    system("cls");
     RemoveInNodeSearch(list, SearchNode(list, x));
 
     // Xuat danh sach sau khi xoa
-    cout << "Danh sach sau khi xoa la: " << endl;
+    cout << "======== DANH SACH SINH VIEN KHI XOA ========" << endl;
     PrintList(list);
-    DownLine();
 }

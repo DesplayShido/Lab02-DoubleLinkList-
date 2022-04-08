@@ -26,16 +26,27 @@ void CreateList(LinkList& l)
 	l.Head = l.Tail = NULL;
 }
 
-// Ham tao danh sach gom 50000 so nguyen
-
-void InsertList(LinkList& l)
+// Ham nhap
+void InsertList(LinkList& l, int input)
 {
-	Node* node = NULL;
-	srand(time(NULL));
-	for (int i = 0; i < 50000; i++) {
-		int x = rand() % 100 + 1;
-		node = CreateNode(x);
-		AddTail(l, node);
+	if (input == 0) {
+		Node* node = NULL;
+		srand(time(NULL));
+		for (int i = 0; i < 50000; i++) {
+			int x = rand() % 100 + 1;
+			node = CreateNode(x);
+			AddTail(l, node);
+		}
+	}
+	else {
+		cout << "nhap danh sach (cach nhau 1 dau space): ";
+		Node* node = NULL;
+		int x;
+		for (int i = 0; i < input; i++) {
+			cin >> x;
+			node = CreateNode(x);
+			AddTail(l, node);
+		}
 	}
 }
 
@@ -173,14 +184,19 @@ double AverageList(LinkList l)
 
 // Ham kiem tra danh sach xem co theo thu tu tang dan hoac giam dan khong
 
-int CheckArrangeList(LinkList& l)
+void CheckArrangeList(LinkList& l)
 {
 	for (Node* node = l.Head; node->next != NULL; node = node->next)
 		if (node->data > node->next->data) {
-			for (Node* node = l.Head; node->next != NULL; node = node->next)
-				if (node->data < node->next->data)
-					return 0;
-			return 1;
+			for (Node* node = l.Head; node->next != NULL; node = node->next) {
+				if (node->data < node->next->data) {
+					cout << "Danh sach khong duoc sap xep theo thu tu !" << endl;
+					return;
+				}
+			}
+			cout << "Danh sach duoc sap xep theo thu tu giam dan !" << endl;
+			return;
 		}
-	return 2;
+	cout << "Danh sach duoc sap xep theo thu tu tang dan !" << endl;
+	return;
 }

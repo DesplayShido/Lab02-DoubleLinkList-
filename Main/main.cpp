@@ -7,20 +7,10 @@ using namespace std;
 int main() {
 	LinkList list;
 	CreateList(list);
-	InsertList(list);
-	double X = AverageList(list);
-	cout << X << endl;
-	switch (CheckArrangeList(list))
-	{
-	case 0:
-		cout << "Danh sach khong duoc sap xep theo thu tu !" << endl;
-		break;
-	case 1:
-		cout << "Danh sach duoc sap xep theo thu tu giam dan !" << endl;
-		break;
-	case 2:
-		cout << "Danh sach duoc sap xep theo thu tu tang dan !" << endl;
-		break;
-	}
-	return 0;
+	int n;
+	cout << "nhap so luong phan tu danh sach (nhap 0 de tao ngau nhien 50000 so): ";
+	cin >> n;
+	InsertList(list, n);
+	cout << "Gia tri trung binh cua cac so nguyen trong day la: " << AverageList(list) << endl;
+	CheckArrangeList(list);
 }

@@ -232,7 +232,6 @@ void PrintList(LinkList l)
             cout << "Luong: " << node->data.Luong << endl;
             cout << "------------------------------------------" << endl;
         }
-        DownLine();
     }
 }
 
@@ -292,7 +291,7 @@ int main() {
 	system("cls");
 
 	// Xuat danh sach nhan vien da nhap
-	cout << "----- Danh sach nhan vien da nhap ----- " << endl;
+	cout << "======== DANH SACH NHAN VIEN ========" << endl;
 	PrintList(list);
 	system("pause");
 	system("cls");
@@ -316,7 +315,7 @@ int main() {
 
 	// Sap xep danh sach theo luong giam dan
 	ArrangeList(list);
-	cout << "----- Danh sach nhan vien sau khi duoc sap xep theo luong giam dan ----" << endl;
+	cout << "======== DANH SACH NHAN VIEN SAU KHI DUOC SAP XEP THEO LUONG GIAM DAN ========" << endl;
 	PrintList(list);
 	system("pause");
 	system("cls");
@@ -325,11 +324,11 @@ int main() {
 	cout << "Nhap ma so nhan vien can xoa: ";
 	cin >> x;
 	if (SearchNodeWithCode(list, x) == NULL) {
-		cout << "khong ton tai nhan vien co ma so" << x;
+		cout << "khong ton tai nhan vien co ma so " << x;
 		return 0;
 	}
 	RemoveInNodeSearch(list, SearchNodeWithCode(list, x));
-	cout << "----- Danh sach sau khi xoa mot nhan vien la -----" << endl;
+	cout << "======== DANH SACH NHAN VIEN SAU KHI XOA 1 NHAN VIEN ========" << endl;
 	PrintList(list);
 	return 0;
 }

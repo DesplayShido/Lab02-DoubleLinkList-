@@ -17,7 +17,7 @@ struct LinkList
 Node* CreateNode(int input);
 bool CheckNULL(LinkList l);
 void CreateList(LinkList& l);
-void InsertList(LinkList& l);
+void InsertList(LinkList& l, int input);
 void AddHead(LinkList& l, Node* node);
 void AddTail(LinkList& l, Node* node);
 void InsertAfterNodeSearch(LinkList& l, Node* head, Node* nodesearch);
@@ -27,6 +27,6 @@ int RemoveInNodeSearch(LinkList& l, Node* head);
 Node* SearchNode(LinkList l, int index);
 void PrintList(LinkList l);
 double AverageList(LinkList l);
-int CheckArrangeList(LinkList& l);
+void CheckArrangeList(LinkList& l);
 
 #endif "LinkList_h"
